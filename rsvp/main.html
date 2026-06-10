@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jed & Anghela — 14 June 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-monogram">J &amp; A</div>
+  <ul class="nav-links">
+    <li><a href="#" onclick="showPage('home')" class="active" id="nav-home">Home</a></li>
+    <li><a href="#" onclick="showPage('story')" id="nav-story">Our Story</a></li>
+    <li><a href="#" onclick="showPage('details')" id="nav-details">Details</a></li>
+    <li><a href="#" onclick="showPage('gallery')" id="nav-gallery">Gallery</a></li>
+    <li><a href="#" onclick="showPage('rsvp')" id="nav-rsvp">RSVP</a></li>
+  </ul>
+</nav>
+
+<!-- HOME -->
+<section class="page active" id="page-home">
+  <div class="hero">
+    <p class="hero-eyebrow">We're getting married</p>
+    <h1 class="hero-names">
+      <em>Jed</em>
+      <span class="hero-ampersand">&amp;</span>
+      <em>Anghela</em>
+    </h1>
+    <div class="hero-divider"></div>
+    <p class="hero-date">Sunday, the Fourteenth of June, 2026</p>
+    <p class="hero-location">Pasig, Philippines</p>
+    <button class="hero-cta" onclick="showPage('rsvp')">Kindly RSVP</button>
+  </div>
+</section>
+
+<!-- OUR STORY -->
+<section class="page" id="page-story">
+  <div class="story-hero-band">
+    <p class="section-eyebrow">Our Story</p>
+    <h2 class="section-title"><em>How it all began</em></h2>
+    <div class="section-rule" style="margin:0 auto 1rem;"></div>
+    <p class="body-text" style="margin:0 auto; text-align:center; max-width:480px;">
+      Two wanderers who found each other in the most unexpected of places. Here is our story, told in the moments that mattered most.
+    </p>
+  </div>
+  <div class="story-grid">
+    <div class="story-block">
+      <div class="story-block-year">2019</div>
+      <div class="story-block-label">The beginning</div>
+      <p>A chance encounter at a small bookshop in Florence. James was searching for a Calvino novel; Sofia was reaching for the same shelf. They talked for two hours and forgot about the books entirely.</p>
+    </div>
+    <div class="story-block">
+      <div class="story-block-year">2020</div>
+      <div class="story-block-label">First adventure</div>
+      <p>A spontaneous road trip along the Amalfi Coast that was meant to last a weekend and stretched into ten days. They returned with sea glass, terrible sunburns, and the certainty that this was something real.</p>
+    </div>
+    <div class="story-block">
+      <div class="story-block-year">2022</div>
+      <div class="story-block-label">Home together</div>
+      <p>They moved into a small apartment in Rome, learned to cook pasta from Sofia's grandmother, and hosted dinners that lasted well past midnight every weekend.</p>
+    </div>
+    <div class="story-block">
+      <div class="story-block-year">2024</div>
+      <div class="story-block-label">The proposal</div>
+      <p>At a quiet table at their favourite trattoria — the same one they had stumbled into on that first road trip — James asked Sofia to spend the rest of her life with him. She said yes before he finished the sentence.</p>
+    </div>
+  </div>
+  <div style="text-align:center; padding: 3rem 2rem 5rem;">
+    <button class="hero-cta" onclick="showPage('rsvp')">Join us on the day</button>
+  </div>
+</section>
+
+<!-- DETAILS -->
+<section class="page" id="page-details">
+  <div class="details-band">
+    <p class="section-eyebrow">Wedding Details</p>
+    <h2 class="section-title"><em>Everything you need to know</em></h2>
+    <div class="section-rule" style="margin:0 auto;"></div>
+  </div>
+  <div class="details-cards">
+    <div class="detail-card">
+      <span class="detail-card-icon">&#9700;</span>
+      <div class="detail-card-title">Ceremony</div>
+      <p><strong>3:00 PM</strong><br>Villa Rosa Chapel<br>Guests are invited to take their seats by 2:45 PM</p>
+    </div>
+    <div class="detail-card">
+      <span class="detail-card-icon">&#9734;</span>
+      <div class="detail-card-title">Reception</div>
+      <p><strong>5:30 PM</strong><br>The Rose Garden Terrace<br>Dinner at 7:00 PM · Dancing until midnight</p>
+    </div>
+    <div class="detail-card">
+      <span class="detail-card-icon">&#9432;</span>
+      <div class="detail-card-title">Getting There</div>
+      <p>Shuttle service from<br><strong>Florence city centre</strong><br>Departing 1:30 PM &amp; 2:00 PM</p>
+    </div>
+    <div class="detail-card">
+      <span class="detail-card-icon">&#9702;</span>
+      <div class="detail-card-title">Accommodation</div>
+      <p>A room block has been reserved at <strong>Hotel Bellavista</strong> for the night of the 14th. Book by 1 May 2026.</p>
+    </div>
+  </div>
+
+  <div class="dress-section">
+    <div>
+      <div class="dress-label">Dress code</div>
+      <div class="dress-title">Garden Formal</div>
+      <p class="body-text" style="font-size:14px;">We'd love our guests to dress in celebration with us. Think flowing dresses, linen suits, and warm tones. Please avoid white, ivory, or black.</p>
+      <div class="dress-swatches">
+        <div class="swatch" style="background:#C9A89A;" title="Dusty rose"></div>
+        <div class="swatch" style="background:#B5C9B0;" title="Sage"></div>
+        <div class="swatch" style="background:#D4B483;" title="Champagne"></div>
+        <div class="swatch" style="background:#9AAFC4;" title="Dusty blue"></div>
+        <div class="swatch" style="background:#C4A8C4;" title="Lavender"></div>
+      </div>
+    </div>
+    <div>
+      <div class="dress-label">On the day</div>
+      <div class="dress-title">A few small notes</div>
+      <p style="font-size:14px; color: var(--muted); line-height:1.85; font-weight:300;">The ceremony and reception are both outdoors. We recommend comfortable heels or flat shoes as the venue has a gravel garden path. June in Tuscany is warm — please dress accordingly and bring a light wrap for the evening.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="page" id="page-gallery">
+  <div class="gallery-band">
+    <p class="section-eyebrow">Gallery</p>
+    <h2 class="section-title"><em>Moments along the way</em></h2>
+    <div class="section-rule" style="margin:0 auto 1rem;"></div>
+    <p style="font-size:13px; color:var(--muted); letter-spacing:0.08em;">Our engagement photos — more to come after the wedding</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-cell">
+      <div class="gallery-placeholder">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+        <span>Amalfi Coast</span>
+      </div>
+    </div>
+    <div class="gallery-cell" style="background:#e0b8ab;">
+      <div class="gallery-placeholder">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+        <span>Villa Rosa</span>
+      </div>
+    </div>
+    <div class="gallery-cell" style="background:#d4a898;">
+      <div class="gallery-placeholder">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+        <span>Rome, 2022</span>
+      </div>
+    </div>
+    <div class="gallery-cell" style="background:#dfc2b8;">
+      <div class="gallery-placeholder">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+        <span>The proposal</span>
+      </div>
+    </div>
+    <div class="gallery-cell" style="background:#cca898;">
+      <div class="gallery-placeholder">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+        <span>Tuscany hills</span>
+      </div>
+    </div>
+  </div>
+  <p class="gallery-note">Photos are placeholder. Replace with your own images by adding &lt;img&gt; tags inside each gallery cell.</p>
+</section>
+
+<!-- RSVP -->
+<section class="page" id="page-rsvp">
+  <div class="rsvp-band">
+    <p class="section-eyebrow">RSVP</p>
+    <h2 class="section-title"><em>Will you join us?</em></h2>
+    <div class="section-rule" style="margin:0 auto 1rem;"></div>
+    <p style="font-size:13px; color:var(--muted);">Kindly respond by 1 May 2026</p>
+  </div>
+  <div class="rsvp-wrap">
+    <div id="rsvp-form">
+      <div class="form-group">
+        <label class="form-label">Full name</label>
+        <input type="text" class="form-input" id="rsvp-name" placeholder="Your full name">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email address</label>
+        <input type="email" class="form-input" id="rsvp-email" placeholder="your@email.com">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Attendance</label>
+        <div class="rsvp-radio-group">
+          <div class="rsvp-radio selected" id="radio-yes" onclick="selectAttendance('yes')">Joyfully accepts</div>
+          <div class="rsvp-radio" id="radio-no" onclick="selectAttendance('no')">Regretfully declines</div>
+        </div>
+      </div>
+      <div class="form-group" id="group-guests">
+        <label class="form-label">Number of guests (including yourself)</label>
+        <select class="form-select" id="rsvp-guests">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </div>
+      <div class="form-group" id="group-meal">
+        <label class="form-label">Meal preference</label>
+        <select class="form-select" id="rsvp-meal">
+          <option value="">Please select</option>
+          <option>Fish</option>
+          <option>Meat</option>
+          <option>Vegetarian</option>
+          <option>Vegan</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Dietary requirements or special notes</label>
+        <textarea class="form-textarea" id="rsvp-notes" placeholder="Any allergies, dietary needs, or notes for us…"></textarea>
+      </div>
+      <button class="rsvp-submit" onclick="submitRSVP()">Send my RSVP</button>
+    </div>
+    <div class="rsvp-success" id="rsvp-success">
+      <span class="rsvp-success-icon">&#10038;</span>
+      <h3>Thank you, <span id="success-name"></span></h3>
+      <p id="success-msg"></p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-names">Jed &amp; Anghela</div>
+  <p>14 June 2026 &nbsp;·&nbsp; Villa Rosa Garden Estate, Tuscany</p>
+</footer>
+
+<script>
+  let attendance = 'yes';
+
+  function showPage(id) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+    document.getElementById('page-' + id).classList.add('active');
+    document.getElementById('nav-' + id).classList.add('active');
+    window.scrollTo(0, 0);
+    return false;
+  }
+
+  function selectAttendance(val) {
+    attendance = val;
+    document.getElementById('radio-yes').classList.toggle('selected', val === 'yes');
+    document.getElementById('radio-no').classList.toggle('selected', val === 'no');
+    document.getElementById('group-guests').style.display = val === 'yes' ? 'block' : 'none';
+    document.getElementById('group-meal').style.display = val === 'yes' ? 'block' : 'none';
+  }
+
+  function submitRSVP() {
+    const name = document.getElementById('rsvp-name').value.trim();
+    const email = document.getElementById('rsvp-email').value.trim();
+    if (!name || !email) { alert('Please fill in your name and email.'); return; }
+    const firstName = name.split(' ')[0];
+    document.getElementById('success-name').textContent = firstName;
+    document.getElementById('success-msg').textContent = attendance === 'yes'
+      ? 'We\'re so happy you\'ll be there. We can\'t wait to celebrate with you on our special day.'
+      : 'We\'ll miss you on the day, but thank you for letting us know. We\'ll be thinking of you.';
+    document.getElementById('rsvp-form').style.display = 'none';
+    document.getElementById('rsvp-success').style.display = 'block';
+  }
+
+  document.querySelectorAll('nav a').forEach(a => a.addEventListener('click', e => e.preventDefault()));
+</script>
+</body>
+</html>
